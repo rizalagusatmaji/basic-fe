@@ -1,0 +1,135 @@
+/* Styling untuk tag <body> */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Styling untuk tag <header> */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styling untuk tag <nav> */
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling untuk tag <main> */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Styling untuk tag <form> */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styling untuk tag <ul> */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Styling untuk tag <footer> */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media queries untuk tampilan di layar laptop (min-width: 1080px) */
+/* @media screen and (min-width: 1080px) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  } */
+
+/* Media queries untuk tampilan di layar telepon genggam (min-width: 320px) */
+/* @media screen and (min-width: 320px) {
+    main {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+   */
+
+/* Media queries for responsive design */
+@media (min-width: 320px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section:first-child {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1080px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
