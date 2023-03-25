@@ -1,0 +1,7 @@
+1. Fork 
+2. Buat file baru dari file team.html, beri nama team-namamentee.html
+3. Update halaman baru tadi, lengkapi data diri dan tambahkan
+   a. Foto teman se-house (minimal 3)
+   b. Universitas/Jurusan
+   c. Link github dengan Icon + 1 akun medosos lainnya
+4. Buat PR ke repo sumber (master)
